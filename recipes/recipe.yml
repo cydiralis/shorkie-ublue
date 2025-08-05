@@ -1,0 +1,30 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+# hi i am changing this just so that this file is in the next commit. bleh.
+name: ublue-niri
+description: "Personal image with Niri, Waybar and other goodies."
+
+base-image: ghcr.io/ublue-os/base-nvidia
+image-version: 42
+
+modules:
+  - from-file: common/repos.yml
+  - from-file: common/common-packages.yml
+  - from-file: common/steam.yml
+  - from-file: common/basic-config.yml
+  - from-file: common/config.yml
+
+  - type: script
+    scripts:
+      - build-packages.fish
+
+  - type: systemd
+    user:
+      enabled:
+        - swww-wallpaper.service
+    system:
+      enabled:
+        - kbct.service
+        - kbct-restart.service
+
+  - type: signing
