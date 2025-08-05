@@ -14,17 +14,8 @@ modules:
   - from-file: common/basic-config.yml
   - from-file: common/config.yml
 
-  - type: script
-    scripts:
-      - build-packages.fish
-
   - type: systemd
     user:
       enabled:
         - swww-wallpaper.service
-    system:
-      enabled:
-        - kbct.service
-        - kbct-restart.service
-
   - type: signing

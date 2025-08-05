@@ -38,16 +38,16 @@ modules:
       - gstreamer1-plugins-bad
       - gstreamer1-plugins-ugly 
       - gnome-keyring
-      - luajit
-      - luajit-devel
       # specifically for testing in VMs, i.e GNOME-boxes
       - spice-server
       - spice-vdagent
       - spice-webdavd
       # all my personal stuff, niri, etc
-      - micro
-      - starship
       - swww
+      - blender
+      - prismlauncher
+      - fzf
+      - wttrbar
       - swaync
       - niri
       - greetd
@@ -56,16 +56,10 @@ modules:
       - adw-gtk3-theme
       - xdg-desktop-portal-gnome
       - firacode-nerd-fonts
-      - fish
       - gtklock
-      - wofi
-      - fuzzel
-      - eza
-      - bat
       - cosmic-greeter
       - doas
       - tailscale
-      - alacritty
       - librewolf
       - hyfetch
       - fastfetch
