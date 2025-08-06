@@ -45,6 +45,7 @@ modules:
       # all my personal stuff, niri, etc
       - swww
       - blender
+      - foot
       - prismlauncher
       - fzf
       - wttrbar
